@@ -1,14 +1,30 @@
 .main-grid-container > * {
     padding: 1rem;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .main-grid-container {
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
+    grid-gap: 10px;
 }
 
 .main-grid-container .dashboard {
-    grid-row: span 2;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.main-grid-container .dashboard .dashboard-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.main-grid-container .dashboard .dashboard-title h1 {
+    flex: 1;
 }
