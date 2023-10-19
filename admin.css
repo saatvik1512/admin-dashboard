@@ -1,0 +1,14 @@
+.main-grid-container > * {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
+}
+
+.main-grid-container .dashboard {
+    grid-row: span 2;
+}
