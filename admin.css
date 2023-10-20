@@ -1,5 +1,4 @@
 .main-grid-container > * {
-    padding: 1rem;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -27,4 +26,8 @@
 
 .main-grid-container .dashboard .dashboard-title h1 {
     flex: 1;
+}
+
+li {
+    list-style-type: none;
 }
