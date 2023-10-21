@@ -1,6 +1,8 @@
 :root {
     --heading-font-family: 'Russo One', sans-serif;
     --list-font-family: 'Roboto Mono', monospace;
+    --regular-playpan-sans: 'Playpen Sans', cursive;
+    --button-color: #0c4a6e;
 }
 
 .main-grid-container > * {
@@ -121,17 +123,68 @@
     gap: 1.3rem;
 }
 
-.first-container, .second-container {
-    padding: 1rem;
+.first-container, .second-container, .sub-container-1, .sub-container-2 {
+    padding: 0 1rem;
 }
 
-.notification {
+.magnifying-glass, .notification {
     font-size: 1.4rem;
     cursor: pointer;
 }
 
 .notification:hover {
     animation: shake 0.4s infinite;
+}
+
+.search-container .search-container-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.search-container .search-container-two .sub-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    align-items: center;
+}
+
+.search-container .search-container-two .sub-container-1 p {
+    font-size: 1.2rem;
+    font-family: var(--regular-playpan-sans);
+    letter-spacing: 5px;
+    margin: 0 10px;
+}
+
+.search-container .search-container-two .sub-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-self: end;
+}
+
+.sub-container-2 > button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    background-color: var(--button-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+.profile-bar-container {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 2fr 1fr;
+    grid-gap: 10px;
+}
+
+.profile-bar-container .your-projects {
+    grid-row: span 2;
+}
+
+.profile-bar-container > * {
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 @keyframes shake {
