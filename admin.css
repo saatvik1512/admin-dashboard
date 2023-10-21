@@ -175,25 +175,15 @@ body {
     grid-template: repeat(2, 1fr) / 2fr 1fr;
     grid-gap: 10px;
     padding: 1rem;
+    background-color: #9ca3af;
 }
 
 .profile-bar-container .your-projects {
     grid-row: span 2;
 }
 
-.profile-bar-container .announcement .section-one{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1.2rem;
-    border: 1px solid black;
-    border-radius: 10px;
-
-}
-
-.announcement h3[class="heading"] {
-    margin: 0;
-    margin-bottom: 0.4rem;
+h3[class="heading"] {
+    margin: 0.6rem 0;
     font-family: var(--regular-playpan-sans);
 }
 
@@ -204,6 +194,79 @@ body {
 
 .article p {
     border-bottom: 1px solid grey;
+}
+
+.section-one, .section-2{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.2rem;
+    background-color: white;
+    border-radius: 10px; 
+}
+
+.bruce-wayne {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr 5fr;
+    column-gap: 6px;
+    align-items: center;
+}
+
+.bruce-wayne img {
+    grid-row: span 2;
+    justify-self: center;
+}
+
+.bruce-wayne p {
+    margin: 0;
+}
+
+.bruce-wayne p:first-of-type{
+    font-family: var(--regular-playpan-sans);
+    font-weight: 700;
+}
+
+.bruce-wayne p:last-child{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    color: rgb(71, 70, 70);
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    grid-gap: 1.4rem;
+    background-color: white;
+    border-left: 8px solid var(--button-color);
+}
+
+.card .card-first-section h4 {
+    margin: 0;
+    font-family: var(--regular-playpan-sans);
+    font-size: 1.3rem;
+}
+
+.card .card-first-section p {
+    font-size: 1.1rem;
+}
+
+.card .card-second-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.card .card-second-section img {
+    width: 30px;
+    height: auto;
+}
+
+.profile-bar-container .your-projects:not(){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 @keyframes shake {
