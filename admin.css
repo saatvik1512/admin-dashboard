@@ -10,7 +10,7 @@ body {
 }
 .main-grid-container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 10fr;
     grid-template-rows: 1fr 7fr;
 }
 
@@ -21,6 +21,7 @@ body {
     background: linear-gradient( #022c22, #064e3b, #059669, #34d399);
     grid-gap: 1rem;
     justify-content: center;
+    padding: 1.4rem;
 }
 
 .main-grid-container .dashboard .dashboard-title {
