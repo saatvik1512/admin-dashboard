@@ -236,6 +236,7 @@ h3[class="heading"] {
     grid-gap: 1.4rem;
     background-color: white;
     border-left: 8px solid var(--button-color);
+    height: min(50%, 1fr);
 }
 
 .card .card-first-section h4 {
